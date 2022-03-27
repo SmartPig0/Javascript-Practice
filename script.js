@@ -35,3 +35,26 @@ function Clicar() {
     )
 
 }
+
+var clic2 = document.querySelector('.btn2')
+clic2.addEventListener('click', Clicar2)
+clic2.addEventListener('mouseout', Mouze)
+clic2.addEventListener('mouseenter',Enter)
+
+function Clicar2() {
+    
+   if ( clic2.style.background === 'blue')
+    clic2.style.background = 'yellow'
+    else if (clic2.style.background === 'yellow')
+    clic2.style.background = 'green'
+    else (clic2.style.background = 'red')
+}
+function Mouze() {
+    if (clic2.style.background != 'red')
+    clic2.style.background = 'blue'
+    else (clic2.style.background = 'green')
+}
+function Enter() {
+    if (clic2.style.background === 'green')
+       clic2.style.background = 'blue' 
+}
