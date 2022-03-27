@@ -15,3 +15,23 @@ h13.style.background = 'red'
 h13.innerHTML = 'Testes Funcionando'
 
 
+
+function Clicar() {
+
+   var clic = document.querySelector('.btn')
+   
+   if (
+
+    clic.style.background === 'blue'
+
+   )
+
+   clic.style.background = 'pink'
+       
+    else (
+
+    clic.style.background = 'blue'
+
+    )
+
+}
